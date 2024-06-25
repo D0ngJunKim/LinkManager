@@ -1,0 +1,74 @@
+{
+  "webUrlList": [
+    {
+      "title": "Url 내 특정 Text Contain 체크로 랜딩 판단 케이스",
+      "description": "구글 웹 랜딩",
+      "name": "urlFuncGoogleWeb",
+      "checkUrls": [
+        "google.com"
+      ],
+      "samples": [
+        "https://www.google.com"
+      ],
+      "funNames": [
+        "LinkManager.urlFuncGoogleWeb"
+      ]
+    },
+    {
+      "title": "Url Host 내 특정 Text Contain 체크로 랜딩 판단 케이스",
+      "description": "BBC 웹 랜딩",
+      "name": "urlFuncBBCWeb",
+      "checkUrlsHost": [
+        "www.bbc.com"
+      ],
+      "samples": [
+        "https://www.bbc.com/travel"
+      ],
+      "funNames": [
+        "LinkManager.urlFuncBBCWeb"
+      ]
+    },
+    {
+      "title": "정규식으로 랜딩 판단 케이스",
+      "description": "네이버 쇼핑 탭 랜딩",
+      "name": "urlFuncNaverShopping",
+      "patterns": [
+        "shopping.naver.com/living/([A-Za-z])+/home"
+      ],
+      "samples": [
+        "https://shopping.naver.com/living/homeliving/home"
+      ],
+      "funNames": [
+        "LinkManager.urlFuncNaverShopping"
+      ]
+    },
+    {
+      "title": "Parameter Key의 존재 여부로 랜딩 판단 케이스",
+      "description": "네이버 쇼핑 카테고리 랜딩",
+      "name": "urlFuncNaverShoppingTab",
+      "parameterKeys": [
+        "menu"
+      ],
+      "samples": [
+        "https://shopping.naver.com/logistics/category?menu=10000026"
+      ],
+      "funNames": [
+        "LinkManager.urlFuncNaverShoppingTab"
+      ]
+    },
+    {
+      "title": "Url 완전 일치 체크로 랜딩 판단 케이스",
+      "description": "카카오 웹툰 랜딩",
+      "name": "urlFuncKakaoWebtoon",
+      "sameUrls": [
+        "webtoon.kakao.com"
+      ],
+      "samples": [
+        "https://webtoon.kakao.com"
+      ],
+      "funNames": [
+        "LinkManager.urlFuncKakaoWebtoon"
+      ]
+    }
+  ]
+}
